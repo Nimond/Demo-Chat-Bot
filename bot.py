@@ -2,9 +2,9 @@ import requests
 import json
 import random
 from basic import get_products
+from api_key import a_t as access_token
 
-
-access = 'access token'
+access = access_token
 id = 176863166
 v = '8.92'
 
