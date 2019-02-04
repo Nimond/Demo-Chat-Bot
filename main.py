@@ -83,7 +83,7 @@ if __name__ == "__main__":
                     payload = json.loads(update['object']['payload'])
                     
                     if not payload['button'] in ['close', 'open', 'close_full']:
-                        params['message'] = 'вы нажали {} кнопку'.format(temp[payload['button']])
+                        params['message'] = 'Вы нажали {} кнопку'.format(temp[payload['button']])
                     else:
                         if payload['button'] == 'open':
                             params['keyboard'] = default_keyboard
@@ -97,7 +97,7 @@ if __name__ == "__main__":
                             # params['keyboard'] = empty
                             params['message'] = 'закрыл'
                 else:
-                    params['message'] = 'пожалуйста? используйте кнопки'
+                    params['message'] = 'пожалуйста, используйте кнопки'
 
 
                 r = requests.get('https://api.vk.com/method/messages.send', params=params)
