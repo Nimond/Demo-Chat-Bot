@@ -6,7 +6,7 @@ default_keyboard = str(json.dumps({
       [{ 
         "action": { 
           "type": "text", 
-          "payload": "{\"button\": \"key1\"}", 
+          "payload": "{\"button\": \"red\"}", 
           "label": "Red" 
         }, 
         "color": "negative" 
@@ -14,7 +14,7 @@ default_keyboard = str(json.dumps({
      { 
         "action": { 
           "type": "text", 
-          "payload": "{\"button\": \"key2\"}", 
+          "payload": "{\"button\": \"green\"}", 
           "label": "Green" 
         }, 
         "color": "positive" 
@@ -22,7 +22,7 @@ default_keyboard = str(json.dumps({
       [{ 
         "action": { 
           "type": "text", 
-          "payload": "{\"button\": \"key3\"}", 
+          "payload": "{\"button\": \"white\"}", 
           "label": "White" 
         }, 
         "color": "default" 
@@ -30,11 +30,45 @@ default_keyboard = str(json.dumps({
      { 
         "action": { 
           "type": "text", 
-          "payload": "{\"button\": \"key4\"}", 
+          "payload": "{\"button\": \"blue\"}", 
           "label": "Blue" 
         }, 
         "color": "primary" 
       }] 
+    ,
+    [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"close\"}", 
+          "label": "Close" 
+        }, 
+        "color": "negative" 
+      }]
+      ]
+  }))
+
+closed_keyboard = str(json.dumps({ 
+    "one_time": True, 
+    "buttons": [ 
+      [{ 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"open\"}", 
+          "label": "Open" 
+        }, 
+        "color": "positive" 
+      }], 
+      [ 
+      { 
+        "action": { 
+          "type": "text", 
+          "payload": "{\"button\": \"close_full\"}", 
+          "label": "Close" 
+        }, 
+        "color": "negative" 
+      }] 
     ] 
   } ))
+
+empty = str(json.dumps({}))
  
