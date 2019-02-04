@@ -97,7 +97,7 @@ if __name__ == "__main__":
                             # params['keyboard'] = empty
                             params['message'] = 'закрыл'
                 else:
-                    params['message'] = 'пожалуйста используйте кнопки'
+                    params['message'] = 'пожалуйста? используйте кнопки'
 
 
                 r = requests.get('https://api.vk.com/method/messages.send', params=params)
